@@ -26,9 +26,8 @@
     </joint>
     <link name="${arm_id}_leftfinger">
       <visual>
-      <origin xyz="0. 0. 0" rpy="0 0 ${pi}"/>
         <geometry>
-          <mesh filename="package://${description_pkg}/meshes/visual/one_piece_thin_grasp_finray_finger.obj" />
+          <mesh filename="package://${description_pkg}/meshes/visual/finger.dae" />
         </geometry>
       </visual>
       <!-- screw mount -->
@@ -65,9 +64,9 @@
     </link>
     <link name="${arm_id}_rightfinger">
       <visual>
-        <origin xyz="0.0 -0.0 0" rpy="0 0 0" />
+        <origin xyz="0 0 0" rpy="0 0 ${pi}" />
         <geometry>
-          <mesh filename="package://${description_pkg}/meshes/visual/one_piece_thin_grasp_finray_finger.obj" />
+          <mesh filename="package://${description_pkg}/meshes/visual/finger.dae" />
         </geometry>
       </visual>
       <!-- screw mount -->
